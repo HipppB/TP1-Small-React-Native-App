@@ -1,20 +1,14 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
-import { ColorSchemeName } from "react-native";
 
 import NotFoundScreen from "../screens/NotFoundScreen";
-import { RootStackParamList } from "../types";
 import ListScreen from "../screens/ListScreen";
 import DetailScreen from "../screens/DetailScreen";
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
-export default function Navigation({
-  colorScheme,
-}: {
-  colorScheme: ColorSchemeName;
-}) {
+export default function Navigation() {
   return (
     <NavigationContainer>
       <RootNavigator />
@@ -33,7 +27,11 @@ function RootNavigator() {
         component={ListScreen}
         options={{ title: "Liste des élèves de la JAC" }}
       />
-      <Stack.Screen name="Details" component={DetailScreen} />
+      <Stack.Screen
+        name="Details"
+        component={DetailScreen}
+        options={{ title: "Fiche élève" }}
+      />
       <Stack.Screen
         name="List"
         component={ListScreen}

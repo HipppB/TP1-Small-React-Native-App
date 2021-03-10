@@ -1,6 +1,5 @@
 import * as React from "react";
 import {
-  View,
   StyleSheet,
   Text,
   SafeAreaView,
@@ -9,7 +8,6 @@ import {
   Image,
 } from "react-native";
 import members from "../assets/data/members.json";
-import urls from "../assets/data/urlpictures.json";
 // @ts-ignore
 export default function ListScreen(props) {
   return (

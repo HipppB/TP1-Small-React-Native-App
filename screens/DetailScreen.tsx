@@ -1,12 +1,5 @@
 import * as React from "react";
-import {
-  View,
-  StyleSheet,
-  Text,
-  Button,
-  SafeAreaView,
-  Image,
-} from "react-native";
+import { StyleSheet, Text, SafeAreaView, Image } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 // @ts-ignore
 export default function DetailScreen({ route }) {
