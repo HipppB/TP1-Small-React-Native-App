@@ -1,8 +1,8 @@
 import * as React from "react";
-import { StyleSheet, Text, SafeAreaView, Image } from "react-native";
+import { StyleSheet, Text, SafeAreaView, Image, Button } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 // @ts-ignore
-export default function DetailScreen({ route }) {
+export default function DetailScreen({ navigation, route }) {
   const name = route.params.person["name"];
   // @ts-ignore
   const url = route.params.person["url"];
@@ -14,6 +14,7 @@ export default function DetailScreen({ route }) {
     route.params.person["description"] +
     "\n\n" +
     route.params.person["description"];
+  navigation.setOptions({ title: "Profil de " + name });
   return (
     <SafeAreaView style={styles.container}>
       <Image

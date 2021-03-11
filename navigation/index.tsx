@@ -25,12 +25,30 @@ function RootNavigator() {
       <Stack.Screen
         name="Root"
         component={ListScreen}
-        options={{ title: "Liste des élèves de la JAC" }}
+        options={{
+          title: "Liste des élèves la JAC",
+          headerStyle: {
+            backgroundColor: "#F6F6F9",
+          },
+          headerTintColor: "black",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
       />
       <Stack.Screen
         name="Details"
         component={DetailScreen}
-        options={{ title: "Fiche élève" }}
+        options={{
+          title: "Fiche élève",
+          headerStyle: {
+            backgroundColor: "#F6F6F9",
+          },
+          headerTintColor: "black",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
       />
       <Stack.Screen
         name="List"

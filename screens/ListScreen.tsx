@@ -51,6 +51,7 @@ export default function ListScreen(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#F6F6F9",
   },
   titleArea: {
     justifyContent: "center",
